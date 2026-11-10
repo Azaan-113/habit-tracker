@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Habit Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1>My Habit Tracker ✨</h1>
+            <p>Small steps every day lead to big changes.</p>
+        </header>
+
+        <section class="stats">
+            <div class="stat-card">
+                <h3 id="totalHabits">0</h3>
+                <p>Total Habits</p>
+            </div>
+
+            <div class="stat-card">
+                <h3 id="completedHabits">0</h3>
+                <p>Completed Today</p>
+            </div>
+
+            <div class="stat-card">
+                <h3 id="progress">0%</h3>
+                <p>Daily Progress</p>
+            </div>
+        </section>
+
+        <section class="progress-section">
+            <h2>Today's Progress</h2>
+            <div class="progress-bar">
+                <div id="progressFill"></div>
+            </div>
+        </section>
+
+<section class="stats">
+    <div class="stat-card">
+        <h3 id="streakCount">0 🔥</h3>
+        <p>Daily Streak</p>
+    </div>
+
+    <div class="stat-card">
+        <h3 id="todayDate">--</h3>
+        <p>Today's Date</p>
+    </div>
+</section>
+
+<section class="progress-section">
+    <h2>Weekly Activity 📊</h2>
+    <div id="weeklyActivity" class="weekly-activity"></div>
+</section>
+
+
+        <section class="add-section">
+            <h2>Add a New Habit</h2>
+
+            <div class="input-group">
+                <input
+                    type="text"
+                    id="habitInput"
+                    placeholder="Enter your new habit..."
+                >
+
+                <button id="addHabitBtn">+ Add Habit</button>
+            </div>
+        </section>
+
+        <section class="habit-section">
+            <h2>My Daily Habits</h2>
+            <div id="habitList"></div>
+        </section>
+
+        <footer>
+            <p>Stay Consistent. Stay Focused. Keep Growing. 🌱</p>
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
